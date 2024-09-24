@@ -11,9 +11,9 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
+  <body class="">
     <header class="bg-[#F9F7F3]">
-      <div class="navbar">
+      <div class="navbar w-[90%] m-auto">
         <div class="navbar-start">
           <a
             class="border-solid border text-xl px-8 py-3 bg-[#B4F461] rounded-lg"
@@ -27,11 +27,161 @@
         </div>
         <div class="navbar-end flex gap-1">
           <img src="./assets/coin.png" alt="" />
-          <p><span>5000</span> BDT</p>
+          <p><span id="total-money">5000</span> BDT</p>
         </div>
       </div>
     </header>
-    <main></main>
+
+    <main class="py-10 w-[90%] mx-auto">
+      <div class="flex justify-center mb-6 gap-5">
+        <button
+          id="show-donation"
+          class="px-4 py-2 rounded-md bg-[#B4F461] text-white focus:outline-none transition-colors duration-200"
+        >
+          Donation
+        </button>
+        <button
+          id="show-history"
+          class="px-4 py-2 rounded-md border-2 border-solid focus:outline-none transition-colors duration-200 text-gray-600"
+        >
+          History
+        </button>
+      </div>
+      <!-- Donation01 form start -->
+      <div id="donation">
+        <div
+          class="card card-side shadow-xl border-solid border border-gray-300 p-5 lg:m-10"
+        >
+          <div class="card-body">
+            <figure class="">
+              <img src="./assets/noakhali.png" alt="Movie" />
+            </figure>
+          </div>
+          <div class="card-body space-y-4">
+            <div class="flex space-x-2">
+              <img src="./assets/coin.png" alt="" />
+              <p><span id="account-balance">0</span> BDT</p>
+            </div>
+            <h2 id="donate-for-flood" class="card-title">
+              Donate for Flood at Noakhali, Bangladesh
+            </h2>
+            <p>
+              The recent floods in Noakhali have caused significant damage to
+              homes infrastructure. Your donation will help provide essential
+              supplies and to those affected by this disaster. Every
+              contribution, big or small, makes difference. Please join us in
+              supporting the relief efforts and making a positive impact on the
+              lives of those in need.
+            </p>
+            <input
+              id="input-donate-money"
+              type="text"
+              class="border-2 px-4 py-2 rounded-md"
+              placeholder="Write Donation Amount"
+              required
+            />
+            <button id="btn-donate" type="button" class="btn btn-primary">
+              Donate Now
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Donation01 form end -->
+
+      <!-- Donation02 form start -->
+      <div id="donation-02">
+        <div
+          class="card card-side shadow-xl border-solid border border-gray-300 p-5 lg:m-10"
+        >
+          <div class="card-body">
+            <figure class="">
+              <img src="./assets/feni.png" alt="Movie" />
+            </figure>
+          </div>
+          <div class="card-body space-y-4">
+            <div class="flex space-x-2">
+              <img src="./assets/coin.png" alt="" />
+              <p><span id="account-balance-02">0</span> BDT</p>
+            </div>
+            <h2 id="donate-for-flood-02" class="card-title">
+              Donate for Flood Relief in Feni, Bangladesh
+            </h2>
+            <p>
+              The recent floods in Feni have devastated local communities,
+              leading to severe disruption and loss. Your generous donation will
+              help provide immediate aid, including food, clean water, and
+              medical supplies, to those affected by this calamity. Together, we
+              can offer crucial support and help rebuild lives in the aftermath
+              of this disaster. Every contribution counts towards making a real
+              difference. Please consider donating today to assist those in
+              urgent need.
+            </p>
+            <input
+              id="input-donate-money-02"
+              type="text"
+              class="border-2 px-4 py-2 rounded-md"
+              placeholder="Write Donation Amount"
+              required
+            />
+            <button id="btn-donate-02" type="button" class="btn btn-primary">
+              Donate Now
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Donation02 form end -->
+
+      <!-- Donation03 form start -->
+      <div id="donation-03">
+        <div
+          class="card card-side shadow-xl border-solid border border-gray-300 p-5 lg:m-10"
+        >
+          <div class="card-body">
+            <figure class="">
+              <img src="./assets/quota-protest.png" alt="Movie" />
+            </figure>
+          </div>
+          <div class="card-body space-y-4">
+            <div class="flex space-x-2">
+              <img src="./assets/coin.png" alt="" />
+              <p><span id="account-balance-03">0</span> BDT</p>
+            </div>
+            <h2 id="donate-for-flood-03" class="card-title">
+              Aid for Injured in the Quota Movement
+            </h2>
+            <p>
+              The recent Quota movement has resulted in numerous injuries and
+              significant hardship for many individuals. Your support is crucial
+              in providing medical assistance, rehabilitation, and necessary
+              supplies to those affected. By contributing, you help ensure that
+              injured individuals receive the care and support they need during
+              this challenging time. Every donation plays a vital role in
+              alleviating their suffering and aiding in their recovery. Please
+              consider making a donation to support these brave individuals in
+              their time of need.
+            </p>
+            <input
+              id="input-donate-money-03"
+              type="text"
+              class="border-2 px-4 py-2 rounded-md"
+              placeholder="Write Donation Amount"
+              required
+            />
+            <button id="btn-donate-03" type="button" class="btn btn-primary">
+              Donate Now
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Donation03 form end -->
+
+      <!-- History form start -->
+      <div id="history" class="hidden py-10"></div>
+      <!-- History form end -->
+    </main>
     <footer></footer>
+    <script src="./js/utilities.js"></script>
+    <script src="./js/features.js"></script>
+    <script src="./js/donate.js"></script>
   </body>
 </html>
