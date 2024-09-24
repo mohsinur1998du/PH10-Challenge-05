@@ -16,6 +16,10 @@ document
       document.getElementById("account-balance").innerText = newBalance;
       document.getElementById("total-money").innerText = totalBalance;
 
+      const modal = document.getElementById("my_modal_1");
+      modal.classList.remove("hidden");
+      modal.showModal();
+
       const div = document.createElement("div");
 
       //   div.innerHTML = `
@@ -37,11 +41,14 @@ document
       div.appendChild(h2);
       div.appendChild(p);
 
-      div.style.border = "1px solid";
+      div.className =
+        "border-2 border-solid border-[rgba(17, 17, 17, 0.1)] p-3 mb-3 rounded-md";
+
+      /* div.style.border = "1px solid rgba(17, 17, 17, 0.1)";
       div.style.margin = "0 auto";
       div.style.padding = "10px";
       div.style.marginBottom = "10px";
-      div.style.borderRadius = "6px";
+      div.style.borderRadius = "6px"; */
 
       console.log(div);
       document.getElementById("history").appendChild(div);
@@ -66,15 +73,11 @@ document
       document.getElementById("account-balance-02").innerText = newBalance;
       document.getElementById("total-money").innerText = totalBalance;
 
-      const div = document.createElement("div");
+      const modal = document.getElementById("my_modal_2");
+      modal.classList.remove("hidden");
+      modal.showModal();
 
-      //   div.innerHTML = `
-      //         <h2 style="font-weight: bold; border: 1px solid grey; text-align: center;">${addMoney} is donated for ${
-      //     event.target.previousElementSibling.previousElementSibling
-      //       .previousElementSibling.textContent
-      //   }.</h2>
-      //         <p>Date: ${new Date()}</p>
-      //         `;
+      const div = document.createElement("div");
 
       const h2 = document.createElement("h2");
       h2.textContent = `${addMoney} is donated for ${event.target.previousElementSibling.previousElementSibling.previousElementSibling.textContent}`;
@@ -87,11 +90,8 @@ document
       div.appendChild(h2);
       div.appendChild(p);
 
-      div.style.border = "1px solid";
-      div.style.margin = "0 auto";
-      div.style.padding = "10px";
-      div.style.marginBottom = "10px";
-      div.style.borderRadius = "6px";
+      div.className =
+        "border-2 border-solid border-[rgba(17, 17, 17, 0.1)] p-3 mb-3 rounded-md";
 
       console.log(div);
       document.getElementById("history").appendChild(div);
@@ -116,15 +116,11 @@ document
       document.getElementById("account-balance-03").innerText = newBalance;
       document.getElementById("total-money").innerText = totalBalance;
 
-      const div = document.createElement("div");
+      const modal = document.getElementById("my_modal_3");
+      modal.classList.remove("hidden");
+      modal.showModal();
 
-      //   div.innerHTML = `
-      //         <h2 style="font-weight: bold; border: 1px solid grey; text-align: center;">${addMoney} is donated for ${
-      //     event.target.previousElementSibling.previousElementSibling
-      //       .previousElementSibling.textContent
-      //   }.</h2>
-      //         <p>Date: ${new Date()}</p>
-      //         `;
+      const div = document.createElement("div");
 
       const h2 = document.createElement("h2");
       h2.textContent = `${addMoney} is donated for ${event.target.previousElementSibling.previousElementSibling.previousElementSibling.textContent}`;
@@ -137,13 +133,9 @@ document
       div.appendChild(h2);
       div.appendChild(p);
 
-      div.style.border = "1px solid";
-      div.style.margin = "0 auto";
-      div.style.padding = "10px";
-      div.style.marginBottom = "10px";
-      div.style.borderRadius = "6px";
+      div.className =
+        "border-2 border-solid border-[rgba(17, 17, 17, 0.1)] p-3 mb-3 rounded-md";
 
-      console.log(div);
       document.getElementById("history").appendChild(div);
     }
   });
