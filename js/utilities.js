@@ -11,7 +11,7 @@ function getTextFieldValueById(id) {
 }
 
 function showSectionById(id) {
-  if (id === "donation" || id === "donation-02") {
+  if (id === "donation" || id === "donation-02" || id === "donation-03") {
     document.getElementById("history").classList.add("hidden");
     document.getElementById("donation").classList.remove("hidden");
     document.getElementById("donation-02").classList.remove("hidden");
